@@ -16,7 +16,7 @@ async def main():
         json=params
     )
     if args.ask:
-        return check_response["randydev"]["message"]
+        print(check_response["randydev"]["message"])
     else:
         print("No question was asked.")
 
