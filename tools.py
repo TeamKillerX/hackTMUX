@@ -4,7 +4,7 @@ from reqs import AsyicXSearcher
 app = typer.Typer()
 
 @app.command()
-def chat(message: str):
+async def chat(message: str):
     url = "https://akeno.randydev.my.id/ryuzaki/chatgpt-old"
     params = {"query": message}
     check_response = await AsyicXSearcher.search(
